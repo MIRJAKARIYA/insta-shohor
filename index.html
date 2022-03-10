@@ -80,7 +80,7 @@
         <section class="container">
             <div>
                 <h3>How does Javascript work?</h3>
-                <p>Javascript is a client side scripting language which runs in the browser.In every browser there is a javascript engine that converts our raw javascript code into machine executable code or byte code.for example chrome-V8 engine,Firefox-Spider monkey,Internet explorer-Chakra.When we load javascript code in the browser,the javascript engine takes the code and passes it into the parser.Parser checks the code line by line searching for errors and if any error is found in any line then the javascript engine stops parsing immediately and throws error in the console.If the whole code is okay then the parser produces a data structure called AST(Abstract Syntax Tree) which contains a tree representation of the javascript code.Then the engine converts the javascript code from the AST into machine code or byte code by interpreting(executing the code line by line).Now the processor can understand the byte code and it runs the code.Chrome V8 engine uses a special type of compiler called JIT(Just In Time) compiler which makes the interpreting process faster.</p>
+                <p>Javascript is a client side interpreted scripting language which runs in the browser.In every browser there is a javascript engine that converts our raw javascript code into machine executable code or byte code.for example chrome-V8 engine,Firefox-Spider monkey,Internet explorer-Chakra.When we load javascript code in the browser,the javascript engine takes the code and passes it into the parser.Parser checks the code line by line searching for errors and if any error is found in any line then the javascript engine stops parsing immediately and throws error in the console.If the whole code is okay then the parser produces a data structure called AST(Abstract Syntax Tree) which contains a tree representation of the javascript code.Then the engine converts the javascript code from the AST into machine code or byte code by interpreting(executing the code line by line).Now the processor can understand the byte code and it runs the code.Chrome V8 engine uses a special type of compiler called JIT(Just In Time) compiler which makes the interpreting process faster.</p>
             </div>
             <div>
                 <h3>What does Javascript event loop do?</h3>
@@ -88,6 +88,13 @@
             </div>
             <div>
                 <h3>What is the difference between local storage and session storage?</h3>
+                <p>Local storage and session storage are browser APIs.These are generally used to store data in the clients browser.Unlike cookies the data which is stored in local storage or session storage isn't sent to the server in each HTTP request.Both local and session storage work in the same way but there are some differences between them.defferences are shown below-</p>
+                <ul>
+                    <li>The storage capacity of local storage is relatively higer than the session storage.The storage capacity of local storage is 5MB/10MB and the storage capacity of session storage is 5MB.</li>
+                    <li>The data in the local storage can be accessed from any window of tab of the browser but the data in the session storage can only be accessed from the same window or tab for which the data is stored.</li>
+                    <li>The data in the local storage can only be deleted manually or but the data in session storage is deleted automatically when the window or tab is closed.</li>
+                    <li>The data in the local storage survives both the refresh of the page and restart of the browser and the data in the session storage survives the refresh of the page but doesn't survives the restart of the browser.</li>
+                </ul>
                 <p></p>
             </div>
         </section>
